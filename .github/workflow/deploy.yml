@@ -1,8 +1,7 @@
 name: Book Search Bot
 
 on:
-  webhooks:
-    secret: secret
+  push:
 
 jobs:
   build:
