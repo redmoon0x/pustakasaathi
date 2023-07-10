@@ -1,0 +1,17 @@
+name: Book Search Bot
+
+on:
+  webhooks:
+    secret: secret
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run code
+        run: |
+          python bot.py
